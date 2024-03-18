@@ -1,19 +1,42 @@
-import { text, defaultLanguage } from './constnats.js';
+import { defaultLanguage, translates } from './constnats.js';
 
-
-const language = 'hy';
-
-
-const warningElement = document.getElementById('warning');
-const warrningText = text[language].warrningText;
-
+const speed = 50;
 let i = 0;
-let typeWriter = () =>{
-    if(i < warrningText.length){
-      document.getElementById('warning').innerHTML +=warrningText.charAt(i);
-      i++
+
+const typeWriter = () => {
+    const warningText = translates[defaultLanguage].warningText;
+    const warningContainer = document.getElementById('warning');
+    
+    if (i < warningText.length) { //64;
+        warningContainer.innerHTML+=  warningText[i];  
+        i++;
+        setTimeout(typeWriter, speed);
     }
 
-    setTimeout(setTimeout(typeWriter, 110))
-}
-setTimeout(typeWriter,500)
+};
+
+typeWriter();
+
+
+
+
+
+
+
+
+// 65 =A
+// 
+// 122 / z 
+// console.log('a' === 'A');
+
+
+// let i = 0;
+// let typeWriter = () =>{
+//     if(i < warrningText.length){
+//       document.getElementById('warning').innerHTML +=warrningText.charAt(i);
+//       i++
+//     }
+
+//     setTimeout(setTimeout(typeWriter, 110))
+// }
+// setTimeout(typeWriter,500)

@@ -1,13 +1,42 @@
 const questions = [
     {
-        title: 'harc',
+        quizTitle: 'Ի՞նչ կտպվի console-ում',
+        quiz: 'console.log(Hello World)',
         options: [
-            'option1',
-            'option2',
-            'option3',
-            'option4',
+            'world',
+            'Hello World',
+            'hello',
+            'World Hello'
         ],
-
-        currectOption: [2, 3]
-    }
+        correctOption: 1
+    },
+    {
+        quizTitle: 'Ի՞նչ կտպվի console-ում',
+        quiz: 'console.log(Hello World)',
+        options: [
+            'world',
+            'Hello World',
+            'hello',
+            'World Hello'
+        ],
+        correctOption: 1
+    },
+    {
+        quizTitle: 'Ի՞նչ կտպվի console-ում',
+        quiz: 'console.log(Hello World)',
+        options: [
+            'world',
+            'Hello World',
+            'hello',
+            'World Hello'
+        ],
+        correctOption: 1
+    },
 ]
+
+const question = 1;
+const selectedOption = 3 // World Hello
+let potin = 0;
+if (selectedOption === questions[question].correctOption) {
+    potin++
+}
