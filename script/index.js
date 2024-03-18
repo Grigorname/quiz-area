@@ -15,6 +15,8 @@ const typeWriter = () => {
 
 };
 
+console.log('Hello Davit')
+
 typeWriter();
 
 
