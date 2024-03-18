@@ -1,4 +1,6 @@
 import { defaultLanguage, translates } from './constnats.js';
+import { valueSetter, tagCreator } from './helpers.js';
+import { questions } from './db.js'; //harcer
 
 const speed = 50;
 let i = 0;
@@ -15,30 +17,27 @@ const typeWriter = () => {
 
 };
 
-console.log('Hello Davit')
 
 typeWriter();
 
 
 
+// quiz code area
 
+const quizGenerator = (quizList) => {
+    let quizStep = 0;
+    const question = quizList[quizStep];//mek harcy
+    console.log(question);
+    return () => {
+        valueSetter('#quiz_title', question.quizTitle);
+        valueSetter('#helpers', question.quiz);
 
+        question.options.forEach((quiz) => {
+            tagCreator('li', document.getElementById('quiz_options'), quiz)
+        });
+    }
+};
 
+const quizConfig =  quizGenerator(questions); //quiz 1 berec
 
-
-// 65 =A
-// 
-// 122 / z 
-// console.log('a' === 'A');
-
-
-// let i = 0;
-// let typeWriter = () =>{
-//     if(i < warrningText.length){
-//       document.getElementById('warning').innerHTML +=warrningText.charAt(i);
-//       i++
-//     }
-
-//     setTimeout(setTimeout(typeWriter, 110))
-// }
-// setTimeout(typeWriter,500)
+quizConfig();
