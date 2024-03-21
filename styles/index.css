@@ -57,8 +57,16 @@ a {
     width: 500px;
     border: 1px solid black;
     margin: auto;
+    transform: translate(0, -500px);
     padding: 20px;
     
+}
+
+.warning_text {
+    text-align: center;
+    transform: translate(0, 100px);
+    font-size: 30px;
+
 }
 .quiz_container ul {
   

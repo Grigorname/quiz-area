@@ -5,6 +5,7 @@ import { questions } from './db.js'; //harcer
 const speed = 50;
 let i = 0;
 
+
 const typeWriter = () => {
     const warningText = translates[defaultLanguage].warningText;
     const warningContainer = document.getElementById('warning');
@@ -13,6 +14,7 @@ const typeWriter = () => {
         warningContainer.innerHTML+=  warningText[i];  
         i++;
         setTimeout(typeWriter, speed);
+    } else {
     }
 
 };
