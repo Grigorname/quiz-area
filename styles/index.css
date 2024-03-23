@@ -57,20 +57,44 @@ a {
     width: 500px;
     border: 1px solid black;
     margin: auto;
-    transform: translate(0, -500px);
+    transition-duration: 0.5s;
+    transform: translate(0, -1000px);
     padding: 20px;
-    
 }
+
+.button_conatiner {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.button_conatiner > button {
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+/* 1rem html size */   
+
+/* 1em */
 
 .warning_text {
+    font-size: 40px;
     text-align: center;
     transform: translate(0, 100px);
-    font-size: 30px;
 
 }
-.quiz_container ul {
-  
-}   
+
+
+
+button[data-test="user_get"] {
+    color: green;
+}
 
 .quiz_container ul > li {
     padding: 10px 20px;
