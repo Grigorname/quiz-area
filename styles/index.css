@@ -51,11 +51,63 @@ a {
     box-shadow: 1px 2px 3px #ccc;
     font-size: 20px;
     margin-left: 100px;
+    padding: 10px;
 }
 
 .quiz_container {
     width: 500px;
-    height: 80vh;
+    transition-duration: 0.5s;
+    padding: 20px;
     border: 1px solid black;
+    transform: translate(0, 0);
     margin: auto;
+}
+.quiz_container  ul {
+
+    
+}
+.quiz_container  ul>li {
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-top: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: 0.3s;
+}
+.quiz_container  ul>li:hover {
+    box-shadow: 1px 2px 3px #ccc;
+}
+.error_answer {
+border-color: red;
+}
+.correct_answer {
+border-color: green;
+}
+
+#warning {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+}
+body {
+    background-color: antiquewhite;
+}
+#helpers {
+    margin-top: 10px;
+}
+.warning-text {
+    width: 500px;
+    transform: translate(0,100px);
+    font-size: 30px;
+}
+.button_container {display: flex; justify-content: center;margin-top: 20px; gap: 20px;}
+
+.button_container >button {
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
 }
