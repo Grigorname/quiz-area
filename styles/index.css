@@ -56,11 +56,15 @@ a {
 
 .quiz_container {
     width: 500px;
+<<<<<<< HEAD
     transition-duration: 0.5s;
     padding: 20px;
+=======
+>>>>>>> f9eeab2ec844859f8b6139b0a2fe05d83ab50a85
     border: 1px solid black;
     transform: translate(0, 0);
     margin: auto;
+<<<<<<< HEAD
 }
 .quiz_container  ul {
 
@@ -103,6 +107,21 @@ body {
 .button_container {display: flex; justify-content: center;margin-top: 20px; gap: 20px;}
 
 .button_container >button {
+=======
+    transition-duration: 0.5s;
+    transform: translate(0, -1000px);
+    padding: 20px;
+}
+
+.button_conatiner {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.button_conatiner > button {
+>>>>>>> f9eeab2ec844859f8b6139b0a2fe05d83ab50a85
     padding: 14px;
     border-radius: 12px;
     border: none;
@@ -110,4 +129,45 @@ body {
     cursor: pointer;
     background-color: green;
     color: white;
+<<<<<<< HEAD
+=======
+}
+
+/* 1rem html size */   
+
+/* 1em */
+
+.warning_text {
+    font-size: 40px;
+    text-align: center;
+    transform: translate(0, 100px);
+
+}
+
+
+
+button[data-test="user_get"] {
+    color: green;
+}
+
+.quiz_container ul > li {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    margin-top: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.quiz_container > ul > li:hover {
+    box-shadow: 1px 2px 3px #ccc;
+}
+
+.error_answer {
+    border-color: red;
+}
+
+.correct_answer {
+    border-color: green;
+>>>>>>> f9eeab2ec844859f8b6139b0a2fe05d83ab50a85
 }
